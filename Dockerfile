@@ -4,8 +4,8 @@ FROM python:3.11.4
 # Set the working directory in the container
 WORKDIR /code
 
-RUN apt-get update && \
-    apt-get install -y libgl1-mesa-glx
+# RUN apt-get update && \
+#     apt-get install -y libgl1-mesa-glx
 
 ENV TF_ENABLE_ONEDNN_OPTS=0
 
