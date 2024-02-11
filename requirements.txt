@@ -9,3 +9,4 @@ hypercorn
 uvicorn
 asgiref
 flask-cors
+gunicorn

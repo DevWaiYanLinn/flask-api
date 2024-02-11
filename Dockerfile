@@ -22,6 +22,6 @@ COPY . .
 EXPOSE 7860
 
 # Run uvicorn when the container launches
-# CMD ["uvicorn", "main:app"]
 # CMD ["hypercorn", "app:asgi", "--bind", "127.0.0.1:7860"]
-CMD ["uvicorn", "app:asgi", "--host", "0.0.0.0", "--port", "7860"]
+# CMD ["uvicorn", "app:asgi", "--host", "0.0.0.0", "--port", "7860"]
+CMD ["gunicorn", "-k", "gevent", "app:create_app()", "-b", "0.0.0.0:7860"]
