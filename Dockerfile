@@ -19,9 +19,9 @@ RUN pip install --no-cache-dir --upgrade -r /code/requirements.txt
 COPY . .
 
 # Make port 7860 available to the world outside this container
-EXPOSE 7680
+EXPOSE 7860
 
 # Run uvicorn when the container launches
 # CMD ["uvicorn", "main:app"]
-CMD ["hypercorn", "app:asgi", "--bind", "127.0.0.1:7680"]
+CMD ["hypercorn", "app:asgi", "--bind", "127.0.0.1:7860"]
 
