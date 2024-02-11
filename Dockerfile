@@ -23,4 +23,5 @@ EXPOSE 7680
 
 # Run uvicorn when the container launches
 # CMD ["uvicorn", "main:app"]
-CMD ["hypercorn", "app:asgi", "--host", "127.0.0.1:7680"]
+CMD ["hypercorn", "app:asgi", "--bind", "127.0.0.1:7680"]
+
