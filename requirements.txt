@@ -1,0 +1,9 @@
+scikit-learn
+opencv-python
+tensorflow~=2.15.0
+numpy
+Flask
+imutils
+uvicorn
+asgiref
+flask-cors

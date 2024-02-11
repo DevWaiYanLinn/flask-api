@@ -1,0 +1,5 @@
+# Run flask development server
+flask run --app app --debug
+
+# Run Production Server 
+uvicorn app:wsgi
