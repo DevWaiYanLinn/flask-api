@@ -3,3 +3,6 @@ flask run --app app --debug
 
 # Run Production Server 
 uvicorn app:wsgi
+
+# create requirement file
+pip freeze > requirements.txt
