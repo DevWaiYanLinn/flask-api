@@ -6,5 +6,6 @@ numpy
 Flask
 imutils
 hypercorn
+uvicorn
 asgiref
 flask-cors
